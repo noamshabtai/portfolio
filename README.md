@@ -1,4 +1,4 @@
-ignal Processing Development and Testing Portfolio
+Signal Processing Development and Testing Portfolio
 
 Welcome to the repository for my Signal Processing Development and Testing Services portfolio. This repository contains:
 
