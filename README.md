@@ -37,4 +37,3 @@ To view the portfolio:
 ---
 
 Feel free to explore, and don’t hesitate to get in touch if you’re interested in collaborating on signal processing projects!
-
