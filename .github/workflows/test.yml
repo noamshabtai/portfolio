@@ -14,23 +14,35 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
-        python-version: '3.13'
+        python-version: '3.12'
+
+    - name: Install system dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y portaudio19-dev pkg-config
 
     - name: Install uv
       uses: astral-sh/setup-uv@v3
 
     - name: Install dependencies
+      working-directory: signal_processing
+      env:
+        CFLAGS: "-I/usr/include"
+        LDFLAGS: "-L/usr/lib/x86_64-linux-gnu"
       run: |
         uv sync
 
     - name: Fix pre-commit for GitHub Actions
+      working-directory: signal_processing
       run: |
         sed -i 's/git@github.com:/https:\/\/github.com\//g' .pre-commit-config.yaml
 
     - name: Run pre-commit hooks (except pytest)
+      working-directory: signal_processing
       run: |
         SKIP=pytest uv run pre-commit run --all-files
 
     - name: Run tests
+      working-directory: signal_processing
       run: |
         uv run pytest
