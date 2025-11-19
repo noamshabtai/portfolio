@@ -1,11 +1,14 @@
 [project]
-name = "wraplogging"
+name = "data-handle"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
+authors = [
+    { name = "Noam Shabtai", email = "shabtai.noam@gmail.com" }
+]
 requires-python = ">=3.12"
 dependencies = [
-    "rich>=13.9.4",
+    "numpy>=2.3.5",
 ]
 
 [build-system]
@@ -14,6 +17,9 @@ build-backend = "hatchling.build"
 
 [dependency-groups]
 dev = [
-    "pytest>=8.3.5",
-    "pytest-xdist>=3.6.1",
+    "parse-sweeps",
+    "pytest>=9.0.1",
 ]
+
+[tool.uv.sources]
+parse-sweeps = { path = "../parse-sweeps", editable = true }
