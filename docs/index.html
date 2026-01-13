@@ -75,22 +75,35 @@
         </section>
         <section id="portfolio">
             <h2>Portfolio Example</h2>
-            <p><strong>Project:</strong> 3D Audio Processing Framework</p>
-            <p>This project demonstrates a modular Python-based framework for 3D audio rendering, focusing on spatial sound simulation and real-time processing. Key features include:</p>
+            <p><strong>Project:</strong> Real-Time Spatial Audio Processing Framework</p>
+            <p>A production-ready Python monorepo implementing modular signal processing architecture with spatial audio capabilities. Built following strict TDD principles with comprehensive test coverage.</p>
+
+            <h3>Architecture Highlights</h3>
             <ul>
-                <li>Binaural audio rendering using head-related transfer functions (HRTFs).</li>
-                <li>Real-time 3D audio spatialization with user-defined sound sources.</li>
-                <li>Integration with TDD using pytest for robust algorithm testing.</li>
-                <li>Visualization tools for sound source positioning and audio waveforms.</li>
+                <li><strong>Modular Design</strong>: Separate packages for STFT processing, spatial audio, buffer management, and activation patterns</li>
+                <li><strong>Binaural Rendering</strong>: HRTF-based 3D audio with quaternion-based head orientation tracking</li>
+                <li><strong>Real-Time GUI Demo</strong>: Tkinter-based interface with live azimuth/elevation control and per-channel gain management</li>
+                <li><strong>Activator Pattern</strong>: Abstract base class with file-based and real-time callback implementations</li>
+                <li><strong>TDD Throughout</strong>: 100+ tests across all modules using pytest with YAML-based parametrization</li>
             </ul>
+
+            <h3>Technical Stack</h3>
+            <ul>
+                <li>Python 3.12+ with type hints and modern tooling (uv, pre-commit hooks)</li>
+                <li>NumPy for signal processing, PyAudio for real-time I/O</li>
+                <li>STFT with perfect reconstruction, configurable overlap ratios</li>
+                <li>CI/CD with GitHub Actions (automated testing on all PRs)</li>
+            </ul>
+
+            <p><strong>Source Code:</strong> <a href="https://github.com/noamshabtai/portfolio">github.com/noamshabtai/portfolio</a></p>
         </section>
         <section id="contact">
             <h2>Contact</h2>
-            <p>If you’re interested in collaborating or learning more, feel free to reach out:</p>
+            <p>If you're interested in collaborating or learning more, feel free to reach out:</p>
             <ul>
-                <li>Email: <a href="mailto:yourname@example.com">yourname@example.com</a></li>
-                <li>GitHub: <a href="https://github.com/yourusername">https://github.com/yourusername</a></li>
-                <li>LinkedIn: <a href="https://linkedin.com/in/yourname">https://linkedin.com/in/yourname</a></li>
+                <li>Email: <a href="mailto:shabtai.noam@gmail.com">shabtai.noam@gmail.com</a></li>
+                <li>GitHub: <a href="https://github.com/noamshabtai">github.com/noamshabtai</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/noam-shabtai-80836717/">linkedin.com/in/noam-shabtai-80836717</a></li>
             </ul>
         </section>
     </div>
