@@ -1,39 +1,54 @@
 Signal Processing Development and Testing Portfolio
 
-Welcome to the repository for my Signal Processing Development and Testing Services portfolio. This repository contains:
+Welcome to my professional portfolio for Signal Processing Development and Testing Services.
 
-1. **`index.html`**: The primary web page showcasing my services, skills, and project examples.
-2. Resources and assets for presenting my expertise in:
-   - Python-based signal processing infrastructure.
-   - Test-Driven Development (TDD) frameworks for signal processing.
-   - Long-term support for scalable platforms.
+I provide scalable Python-based platforms for signal processing applications, with emphasis on Test-Driven Development (TDD) frameworks and long-term support.
 
-## Purpose of the Repository
+## What This Repository Contains
+
+1. **Portfolio Website** (`docs/index.html`) - Professional showcase of my services and capabilities
+2. **Working Demonstration** (`signal_processing/`) - A production-ready spatial audio processing framework that demonstrates the quality and depth of platforms I build for clients
+3. **Technical Documentation** (`AGENT.md`) - Comprehensive development notes and architecture details
+
+## Services I Provide
+
+- **Custom Python Infrastructure** - Scalable platforms tailored for signal processing applications
+- **TDD Framework Development** - Comprehensive testing frameworks that ensure code quality and accelerate development
+- **Long-Term Platform Support** - Ongoing maintenance, updates, and knowledge transfer
+- **Real-Time Processing Systems** - Production-ready audio processing with live streaming capabilities
+- **Spatial Audio Solutions** - HRTF-based binaural rendering and 3D audio systems
+
+## Portfolio Demonstration
+
+The `signal_processing/` directory contains a complete, working spatial audio framework that demonstrates:
+- Real-time 3D audio processing with HRTF-based binaural rendering
+- Modular architecture with 100+ tests and CI/CD integration
+- Professional development practices (TDD, type hints, pre-commit hooks)
+- Multiple deployment patterns (file-based processing and real-time streaming)
+
+This serves as proof of the quality and depth of platforms I build for clients.
+
+For technical details about the signal processing framework, see `signal_processing/README.md`.
+
+## View the Portfolio
+
+Visit the live portfolio at: **https://noamshabtai.github.io/portfolio/**
+
+Or open `docs/index.html` in your browser.
+
+## Purpose
+
 This repository serves as:
-- A public showcase of my technical expertise and offerings.
-- A demonstration of modern web-based presentation for technical services.
-- A hosting source for my GitHub Pages portfolio.
+- A showcase of my professional signal processing development services
+- A working demonstration of scalable, production-ready platforms
+- A resource for potential clients to evaluate my capabilities
 
-## Usage
-To view the portfolio:
-1. Open the `index.html` file in your browser, or...
-2. Visit the GitHub Pages live version hosted at: [https://<your-username>.github.io/<repository-name>/](https://<your-username>.github.io/<repository-name>/)
+## Contact
 
-## Features
-- **Mission Statement**: Outlines my focus on providing scalable, Python-based platforms.
-- **Service Offerings**: Highlights infrastructure design, TDD frameworks, and long-term support.
-- **Portfolio Example**: Describes a real-world modular Python framework with features such as real-time signal processing and visualization.
-- **Contact Information**: Easy ways for clients to reach out.
+If you're interested in signal processing development services or would like to discuss a project:
 
-## Technical Stack
-- **Languages**: HTML, CSS, Markdown.
-- **Hosting**: GitHub Pages.
+- **Email**: shabtai.noam@gmail.com
+- **LinkedIn**: [linkedin.com/in/noam-shabtai-80836717](https://www.linkedin.com/in/noam-shabtai-80836717/)
+- **GitHub**: [github.com/noamshabtai](https://github.com/noamshabtai)
 
-## Future Plans
-- Add more project examples.
-- Include detailed blogs and tutorials on Python-based signal processing.
-- Expand the visual design for enhanced user engagement.
-
----
-
-Feel free to explore, and don’t hesitate to get in touch if you’re interested in collaborating on signal processing projects!
+I welcome discussions about building scalable signal processing platforms for your organization.
