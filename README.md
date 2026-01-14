@@ -15,8 +15,8 @@ I provide scalable Python-based platforms for signal processing applications, wi
 - **Custom Python Infrastructure** - Scalable platforms tailored for signal processing applications
 - **TDD Framework Development** - Comprehensive testing frameworks that ensure code quality and accelerate development
 - **Long-Term Platform Support** - Ongoing maintenance, updates, and knowledge transfer
-- **Real-Time Processing Systems** - Production-ready audio processing with live streaming capabilities
-- **Spatial Audio Solutions** - HRTF-based binaural rendering and 3D audio systems
+- **Real-Time Processing Systems** - Production-ready frameworks with live streaming and data processing capabilities
+- **Algorithm Implementation** - Transforming research algorithms into production-ready, tested code
 
 ## Portfolio Demonstration
 
