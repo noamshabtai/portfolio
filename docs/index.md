@@ -18,15 +18,15 @@ I help organizations transform their signal processing algorithms into productio
 
 ## Services I Offer
 
-- **Custom Python Infrastructure:** Building scalable platforms tailored for audio signal processing applications
+- **Custom Python Infrastructure:** Building scalable platforms tailored for signal processing applications
 
 - **TDD Framework Development:** Establishing comprehensive testing frameworks that ensure code quality and accelerate development cycles
 
 - **Long-Term Platform Support:** Providing ongoing maintenance, updates, and knowledge transfer to your team
 
-- **Real-Time Processing Systems:** Production-ready frameworks with live streaming capabilities using PyAudio
+- **Real-Time Processing Systems:** Production-ready frameworks with live streaming and data processing capabilities
 
-- **Spatial Audio Solutions:** HRTF-based binaural rendering and 3D audio systems
+- **Algorithm Implementation:** Transforming research algorithms into production-ready, tested code
 
 - **Modular Architecture Design:** Scalable systems with clean separation of concerns and reusable components
 
@@ -34,23 +34,31 @@ I help organizations transform their signal processing algorithms into productio
 
 ## Portfolio Demonstration
 
-**Project:** Real-Time Spatial Audio Processing Framework
+**Example Project:** Real-Time Signal Processing Framework with Spatial Audio Application
 
-To demonstrate the quality and depth of services I provide, I have built a complete, production-ready spatial audio processing system. This framework showcases professional-grade infrastructure for audio applications with real-time capabilities and comprehensive testing.
+To demonstrate the quality and depth of services I provide, I have built a complete, production-ready signal processing infrastructure. This framework provides general-purpose components for any signal processing application, with spatial audio implemented as an example use case showcasing the platform's capabilities.
 
-### Core Components
+The infrastructure demonstrates how modular, scalable platforms enable rapid development of signal processing applications while maintaining high code quality and testability.
+
+### Core Infrastructure Components
+
+- **System Architecture**: Base system class providing module connection and execution framework - applicable to any signal processing pipeline
+
+- **Buffer Management**: Sophisticated input/output buffer handling for streaming data in real-time applications
+
+- **Activator Pattern**: Abstract base class with both file-based and real-time callback implementations for flexible deployment across different use cases
 
 - **STFT Processing Module**: Modular Short-Time Fourier Transform with separate Analysis and Synthesis classes, perfect reconstruction, and configurable overlap ratios (2x, 4x, custom)
+
+### Example Application: Spatial Audio
+
+Built on top of the general infrastructure to demonstrate real-world usage:
 
 - **Spatial Audio System**: HRTF-based binaural rendering for immersive 3D audio with quaternion-based head orientation tracking
 
 - **Real-Time GUI Demo**: Tkinter-based interface with live azimuth/elevation control and per-channel gain management
 
-- **Buffer Management**: Sophisticated input/output buffer handling for seamless streaming audio
-
-- **Activator Pattern**: Abstract base class with both file-based and real-time callback implementations for flexible deployment
-
-- **System Architecture**: Base system class providing module connection and execution framework
+This example shows how the infrastructure enables rapid development of complex signal processing applications while maintaining code quality and testability.
 
 ### Development Quality
 
@@ -64,13 +72,19 @@ To demonstrate the quality and depth of services I provide, I have built a compl
 
 - **Production-Ready**: Real-time processing capabilities, perfect reconstruction guarantees, configurable parameters
 
-### Technical Capabilities
+### Platform Capabilities
 
+**General Infrastructure:**
+- Frequency-domain processing with configurable STFT pipeline
+- Real-time streaming with callback-based architecture
+- File-based processing for offline analysis
+- Modular design allowing easy addition of new processing modules
+
+**Example Application (Spatial Audio):**
 - Multiple virtual sound sources at configurable 3D positions (azimuth/elevation)
 - Input: CH channels (mono sources) → Output: Binauralized stereo
-- Frequency-domain processing with STFT pipeline
 - Real-time streaming with PyAudio integration
-- File-based processing for offline analysis (.wav, .bin formats)
+- File I/O supporting .wav and .bin formats
 
 **Source Code & Documentation:** [github.com/noamshabtai/portfolio](https://github.com/noamshabtai/portfolio)
 
