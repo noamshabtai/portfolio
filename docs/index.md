@@ -58,6 +58,12 @@ Built on top of the general infrastructure to demonstrate real-world usage:
 
 - **Real-Time GUI Demo**: Tkinter-based interface with live azimuth/elevation control and per-channel gain management
 
+**Try it yourself:**
+```bash
+git clone https://github.com/noamshabtai/portfolio.git
+./portfolio/signal_processing/spatial-audio-demo/run_demo.sh
+```
+
 This example shows how the infrastructure enables rapid development of complex signal processing applications while maintaining code quality and testability.
 
 ### Development Quality
@@ -100,6 +106,7 @@ Whether you need custom infrastructure development, TDD frameworks, or long-term
 
 ### Contact Information
 
+- **Phone:** +972-58-448-8767
 - **Email:** [shabtai.noam@gmail.com](mailto:shabtai.noam@gmail.com)
 - **LinkedIn:** [linkedin.com/in/noam-shabtai-80836717](https://www.linkedin.com/in/noam-shabtai-80836717/)
 - **GitHub:** [github.com/noamshabtai](https://github.com/noamshabtai)
