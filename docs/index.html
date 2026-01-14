@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signal Processing Portfolio</title>
+    <title>Noam Shabtai - Signal Processing Development Services</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -33,9 +33,33 @@
         }
         .container {
             width: 80%;
+            max-width: 1000px;
             margin: auto;
             overflow: hidden;
             padding: 2rem;
+        }
+        section {
+            margin-bottom: 2.5rem;
+        }
+        section h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        section h3 {
+            color: #555;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        ul {
+            line-height: 1.8;
+        }
+        a {
+            color: #0066cc;
+        }
+        a:hover {
+            color: #004499;
         }
         footer {
             background: #333;
@@ -48,11 +72,12 @@
 </head>
 <body>
     <header>
-        <h1>Signal Processing Development & Testing</h1>
-        <p>Scalable Python Platforms for Signal Processing Applications</p>
+        <h1>Signal Processing Development & Testing Services</h1>
+        <p>Building Scalable Python Platforms with TDD Frameworks and Long-Term Support</p>
     </header>
     <nav>
         <ul>
+            <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -60,50 +85,66 @@
     </nav>
     <div class="container">
         <section id="about">
-            <h2>About Me</h2>
-            <p>I specialize in providing Python-based development and testing platforms for all signal processing applications. With a focus on Test-Driven Development (TDD) and long-term platform support, I help clients turn their algorithms into scalable, maintainable solutions.</p>
+            <h2>About</h2>
+            <p>I provide professional Python-based development and testing services for signal processing applications. My expertise lies in building scalable platforms with comprehensive Test-Driven Development (TDD) frameworks and providing long-term support that ensures your systems remain maintainable and reliable.</p>
+            <p>I help organizations transform their signal processing algorithms into production-ready, scalable platforms with robust testing infrastructure and modern development practices.</p>
         </section>
         <section id="services">
-            <h2>Services</h2>
+            <h2>Services I Offer</h2>
             <ul>
-                <li>Custom Python Infrastructure for Signal Processing</li>
-                <li>Test-Driven Development (TDD) Framework Design</li>
-                <li>Long-term Support and Platform Maintenance</li>
-                <li>Real-time Processing Frameworks</li>
-                <li>Visualization and Reporting Tools</li>
+                <li><strong>Custom Python Infrastructure:</strong> Building scalable platforms tailored for audio signal processing applications</li>
+                <li><strong>TDD Framework Development:</strong> Establishing comprehensive testing frameworks that ensure code quality and accelerate development cycles</li>
+                <li><strong>Long-Term Platform Support:</strong> Providing ongoing maintenance, updates, and knowledge transfer to your team</li>
+                <li><strong>Real-Time Processing Systems:</strong> Production-ready frameworks with live streaming capabilities using PyAudio</li>
+                <li><strong>Spatial Audio Solutions:</strong> HRTF-based binaural rendering and 3D audio systems</li>
+                <li><strong>Modular Architecture Design:</strong> Scalable systems with clean separation of concerns and reusable components</li>
             </ul>
         </section>
         <section id="portfolio">
-            <h2>Portfolio Example</h2>
+            <h2>Portfolio Demonstration</h2>
             <p><strong>Project:</strong> Real-Time Spatial Audio Processing Framework</p>
-            <p>A production-ready Python monorepo implementing modular signal processing architecture with spatial audio capabilities. Built following strict TDD principles with comprehensive test coverage.</p>
+            <p>To demonstrate the quality and depth of services I provide, I have built a complete, production-ready spatial audio processing system. This framework showcases professional-grade infrastructure for audio applications with real-time capabilities and comprehensive testing.</p>
 
-            <h3>Architecture Highlights</h3>
+            <h3>Core Components</h3>
             <ul>
-                <li><strong>Modular Design</strong>: Separate packages for STFT processing, spatial audio, buffer management, and activation patterns</li>
-                <li><strong>Binaural Rendering</strong>: HRTF-based 3D audio with quaternion-based head orientation tracking</li>
+                <li><strong>STFT Processing Module</strong>: Modular Short-Time Fourier Transform with separate Analysis and Synthesis classes, perfect reconstruction, and configurable overlap ratios (2x, 4x, custom)</li>
+                <li><strong>Spatial Audio System</strong>: HRTF-based binaural rendering for immersive 3D audio with quaternion-based head orientation tracking</li>
                 <li><strong>Real-Time GUI Demo</strong>: Tkinter-based interface with live azimuth/elevation control and per-channel gain management</li>
-                <li><strong>Activator Pattern</strong>: Abstract base class with file-based and real-time callback implementations</li>
-                <li><strong>TDD Throughout</strong>: 100+ tests across all modules using pytest with YAML-based parametrization</li>
+                <li><strong>Buffer Management</strong>: Sophisticated input/output buffer handling for seamless streaming audio</li>
+                <li><strong>Activator Pattern</strong>: Abstract base class with both file-based and real-time callback implementations for flexible deployment</li>
+                <li><strong>System Architecture</strong>: Base system class providing module connection and execution framework</li>
             </ul>
 
-            <h3>Technical Stack</h3>
+            <h3>Development Quality</h3>
             <ul>
-                <li>Python 3.12+ with type hints and modern tooling (uv, pre-commit hooks)</li>
-                <li>NumPy for signal processing, PyAudio for real-time I/O</li>
-                <li>STFT with perfect reconstruction, configurable overlap ratios</li>
-                <li>CI/CD with GitHub Actions (automated testing on all PRs)</li>
+                <li><strong>Comprehensive Testing</strong>: 100+ tests across all modules using pytest with YAML-based parametrization</li>
+                <li><strong>CI/CD Integration</strong>: GitHub Actions with automated testing on all pull requests, branch protection requiring passing tests</li>
+                <li><strong>Modern Development Practices</strong>: Pre-commit hooks, type hints throughout, Python 3.12+, uv package management</li>
+                <li><strong>Modular Design</strong>: Clean separation of concerns with multiple interdependent packages in a monorepo structure</li>
+                <li><strong>Production-Ready</strong>: Real-time processing capabilities, perfect reconstruction guarantees, configurable parameters</li>
             </ul>
 
-            <p><strong>Source Code:</strong> <a href="https://github.com/noamshabtai/portfolio">github.com/noamshabtai/portfolio</a></p>
+            <h3>Technical Capabilities</h3>
+            <ul>
+                <li>Multiple virtual sound sources at configurable 3D positions (azimuth/elevation)</li>
+                <li>Input: CH channels (mono sources) → Output: Binauralized stereo</li>
+                <li>Frequency-domain processing with STFT pipeline</li>
+                <li>Real-time streaming with PyAudio integration</li>
+                <li>File-based processing for offline analysis (.wav, .bin formats)</li>
+            </ul>
+
+            <p><strong>Source Code & Documentation:</strong> <a href="https://github.com/noamshabtai/portfolio" target="_blank">github.com/noamshabtai/portfolio</a></p>
+            <p>The complete framework is open-source, demonstrating transparency and code quality. Technical documentation and architecture notes are included in the repository.</p>
         </section>
         <section id="contact">
-            <h2>Contact</h2>
-            <p>If you're interested in collaborating or learning more, feel free to reach out:</p>
+            <h2>Get in Touch</h2>
+            <p>If you're interested in building scalable signal processing platforms for your organization, I welcome the opportunity to discuss how my services can support your needs.</p>
+            <p>Whether you need custom infrastructure development, TDD frameworks, or long-term platform support, I can help transform your signal processing requirements into production-ready solutions.</p>
+            <h3>Contact Information</h3>
             <ul>
-                <li>Email: <a href="mailto:shabtai.noam@gmail.com">shabtai.noam@gmail.com</a></li>
-                <li>GitHub: <a href="https://github.com/noamshabtai">github.com/noamshabtai</a></li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/noam-shabtai-80836717/">linkedin.com/in/noam-shabtai-80836717</a></li>
+                <li><strong>Email:</strong> <a href="mailto:shabtai.noam@gmail.com">shabtai.noam@gmail.com</a></li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/noam-shabtai-80836717/" target="_blank">linkedin.com/in/noam-shabtai-80836717</a></li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/noamshabtai" target="_blank">github.com/noamshabtai</a></li>
             </ul>
         </section>
     </div>
