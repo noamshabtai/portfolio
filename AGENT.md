@@ -348,3 +348,4 @@ Modules extending the `System` class should:
 - Main branch: `main`
 - Git hooks may be in use - commits should follow repository style
 - Always work TDD: write/update tests before implementation
+- When rewriting git history, use `git filter-repo` (NOT `git filter-branch` which is deprecated and can cause issues)
