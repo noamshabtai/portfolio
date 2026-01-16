@@ -42,7 +42,7 @@ git clone https://github.com/noamshabtai/portfolio.git
 **Requirements:**
 - Python 3.12+
 - [uv](https://github.com/astral-sh/uv) package manager
-- Audio output device (speakers/headphones)
+- Headphones (any standard headphones - the 3D effect is created by the software)
 
 **What the script does:**
 1. Sets up a virtual environment with all dependencies
