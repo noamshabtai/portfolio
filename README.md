@@ -30,6 +30,30 @@ This serves as proof of the quality and depth of platforms I build for clients.
 
 For technical details about the signal processing framework, see `signal_processing/README.md`.
 
+## Try It Out
+
+Run the spatial audio demo with a single command:
+
+```bash
+git clone https://github.com/noamshabtai/portfolio.git
+./portfolio/signal_processing/spatial-audio-demo/run_demo.sh
+```
+
+**Requirements:**
+- Python 3.12+
+- [uv](https://github.com/astral-sh/uv) package manager
+- Audio output device (speakers/headphones)
+
+**What the script does:**
+1. Sets up a virtual environment with all dependencies
+2. Generates a test audio signal
+3. Launches a GUI where you can control spatial audio parameters in real-time
+
+**The demo allows you to:**
+- Switch between mono, stereo, and binaural output modes
+- Adjust azimuth and elevation of virtual sound sources
+- Control per-channel gain
+
 ## View the Portfolio
 
 Visit the live portfolio at: **https://noamshabtai.github.io/portfolio/**
@@ -47,6 +71,7 @@ This repository serves as:
 
 If you're interested in signal processing development services or would like to discuss a project:
 
+- **Phone**: +972-58-448-8767
 - **Email**: shabtai.noam@gmail.com
 - **LinkedIn**: [linkedin.com/in/noam-shabtai-80836717](https://www.linkedin.com/in/noam-shabtai-80836717/)
 - **GitHub**: [github.com/noamshabtai](https://github.com/noamshabtai)
