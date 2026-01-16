@@ -58,7 +58,7 @@ Built on top of the general infrastructure to demonstrate real-world usage:
 
 - **Real-Time GUI Demo**: Tkinter-based interface with live azimuth/elevation control and per-channel gain management
 
-**Try it yourself:**
+**Try it yourself** (requires Python 3.12+, [uv](https://github.com/astral-sh/uv), and any standard headphones):
 ```bash
 git clone https://github.com/noamshabtai/portfolio.git
 ./portfolio/signal_processing/spatial-audio-demo/run_demo.sh
