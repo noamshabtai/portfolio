@@ -10,7 +10,9 @@ Building Scalable Python Platforms with TDD Frameworks and Long-Term Support
 
 ## About
 
-I am Noam Shabtai, with a PhD in spatial audio from Ben-Gurion University (Prof. Boaz Rafaely) and postdoctoral research at RWTH Aachen (Prof. Michael Vorlaender).
+I am Noam Shabtai, with a PhD from Ben-Gurion University (Prof. Boaz Rafaely) and postdoctoral research at RWTH Aachen University (Prof. Michael Vorlaender), specializing in array signal processing, real-time systems, and spectral analysis.
+
+This academic foundation in mathematical signal processing - including multi-channel sensor arrays, frequency-domain transformations, and real-time algorithm optimization - applies across domains: audio, medical imaging, radar/lidar, communications, and industrial sensing.
 
 I provide professional Python-based development and testing services for signal processing applications. My expertise lies in building scalable platforms with comprehensive Test-Driven Development (TDD) frameworks and providing long-term support that ensures your systems remain maintainable and reliable.
 
