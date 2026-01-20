@@ -2,8 +2,6 @@ Signal Processing Development and Testing Portfolio
 
 Welcome to my professional portfolio for Signal Processing Development and Testing Services.
 
-I am Noam Shabtai, with a PhD in spatial audio from Ben-Gurion University (Prof. Boaz Rafaely) and postdoctoral research at RWTH Aachen (Prof. Michael Vorlaender).
-
 I provide scalable Python-based platforms for signal processing applications, with emphasis on Test-Driven Development (TDD) frameworks and long-term support.
 
 ## What This Repository Contains
@@ -71,7 +69,7 @@ This repository serves as:
 
 ## Contact
 
-If you're interested in signal processing development services or would like to discuss a project:
+Noam Shabtai, PhD - Ben-Gurion University (Prof. Boaz Rafaely), PostDoc - RWTH Aachen (Prof. Michael Vorlaender)
 
 - **Phone**: +972-58-448-8767
 - **Email**: shabtai.noam@gmail.com
