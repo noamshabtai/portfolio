@@ -1,18 +1,23 @@
-Signal Processing Development and Testing Portfolio
+Data & Signal Processing Development Portfolio
 
-Welcome to my professional portfolio for Signal Processing Development and Testing Services.
+Welcome to my professional portfolio for Data & Signal Processing Development Services.
 
-I provide scalable Python-based platforms for signal processing applications, with emphasis on Test-Driven Development (TDD) frameworks and long-term support.
+I provide scalable Python-based platforms for data and signal processing applications, with emphasis on Test-Driven Development (TDD) frameworks and long-term support.
 
 ## What This Repository Contains
 
-1. **Portfolio Website** (`docs/index.html`) - Professional showcase of my services and capabilities
-2. **Working Demonstration** (`signal_processing/`) - A production-ready spatial audio processing framework that demonstrates the quality and depth of platforms I build for clients
-3. **Technical Documentation** (`AGENT.md`) - Comprehensive development notes and architecture details
+This repository serves as a landing page linking to my project repositories:
+
+1. **Portfolio Website** (`docs/index.md`) - Professional showcase of my services and capabilities
+2. **Technical Documentation** (`AGENT.md`) - Development notes and project planning
+
+## Project Repositories
+
+- **[Signal Processing](https://github.com/noamshabtai/signal-processing)** - Real-time signal processing framework with spatial audio demonstration
 
 ## Services I Provide
 
-- **Custom Python Infrastructure** - Scalable platforms tailored for signal processing applications
+- **Custom Python Infrastructure** - Scalable platforms tailored for data and signal processing applications
 - **TDD Framework Development** - Comprehensive testing frameworks that ensure code quality and accelerate development
 - **Long-Term Platform Support** - Ongoing maintenance, updates, and knowledge transfer
 - **Real-Time Processing Systems** - Production-ready frameworks with live streaming and data processing capabilities
@@ -20,7 +25,7 @@ I provide scalable Python-based platforms for signal processing applications, wi
 
 ## Portfolio Demonstration
 
-The `signal_processing/` directory contains a complete, working spatial audio framework that demonstrates:
+The **[signal-processing](https://github.com/noamshabtai/signal-processing)** repository contains a complete, working spatial audio framework that demonstrates:
 - Real-time 3D audio processing with HRTF-based binaural rendering
 - Modular architecture with 100+ tests and CI/CD integration
 - Professional development practices (TDD, type hints, pre-commit hooks)
@@ -28,15 +33,13 @@ The `signal_processing/` directory contains a complete, working spatial audio fr
 
 This serves as proof of the quality and depth of platforms I build for clients.
 
-For technical details about the signal processing framework, see `signal_processing/README.md`.
-
 ## Try It Out
 
 Run the spatial audio demo with a single command:
 
 ```bash
-git clone https://github.com/noamshabtai/portfolio.git
-./portfolio/signal_processing/spatial-audio-demo/run_demo.sh
+git clone https://github.com/noamshabtai/signal-processing.git
+./signal-processing/spatial-audio-demo/run_demo.sh
 ```
 
 **Requirements:**
@@ -58,13 +61,13 @@ git clone https://github.com/noamshabtai/portfolio.git
 
 Visit the live portfolio at: **https://noamshabtai.github.io/portfolio/**
 
-Or open `docs/index.html` in your browser.
+Or open `docs/index.md` locally.
 
 ## Purpose
 
 This repository serves as:
-- A showcase of my professional signal processing development services
-- A working demonstration of scalable, production-ready platforms
+- A landing page linking to my project repositories
+- A showcase of my professional data & signal processing development services
 - A resource for potential clients to evaluate my capabilities
 
 ## Contact
@@ -76,4 +79,4 @@ Noam Shabtai, PhD - Ben-Gurion University (Prof. Boaz Rafaely), PostDoc - RWTH A
 - **LinkedIn**: [linkedin.com/in/noam-shabtai-80836717](https://www.linkedin.com/in/noam-shabtai-80836717/)
 - **GitHub**: [github.com/noamshabtai](https://github.com/noamshabtai)
 
-I welcome discussions about building scalable signal processing platforms for your organization.
+I welcome discussions about building scalable data & signal processing platforms for your organization.

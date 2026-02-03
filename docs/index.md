@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Signal Processing Development & Testing Services
+# Data & Signal Processing Development Services
 
 Building Scalable Python Platforms with TDD Frameworks and Long-Term Support
 
@@ -64,8 +64,8 @@ Built on top of the general infrastructure to demonstrate real-world usage:
 
 **Try it yourself** (requires Python 3.12+, [uv](https://github.com/astral-sh/uv), and any standard headphones):
 ```bash
-git clone https://github.com/noamshabtai/portfolio.git
-./portfolio/signal_processing/spatial-audio-demo/run_demo.sh
+git clone https://github.com/noamshabtai/signal-processing.git
+./signal-processing/spatial-audio-demo/run_demo.sh
 ```
 
 This example shows how the infrastructure enables rapid development of complex signal processing applications while maintaining code quality and testability.
@@ -96,7 +96,7 @@ This example shows how the infrastructure enables rapid development of complex s
 - Real-time streaming with PyAudio integration
 - File I/O supporting .wav and .bin formats
 
-**Source Code & Documentation:** [github.com/noamshabtai/portfolio](https://github.com/noamshabtai/portfolio)
+**Source Code & Documentation:** [github.com/noamshabtai/signal-processing](https://github.com/noamshabtai/signal-processing)
 
 The complete framework is open-source, demonstrating transparency and code quality. Technical documentation and architecture notes are included in the repository.
 
@@ -117,4 +117,4 @@ Whether you need custom infrastructure development, TDD frameworks, or long-term
 
 ---
 
-© 2025 Signal Processing Development & Testing. All Rights Reserved.
+© 2025 Data & Signal Processing Development. All Rights Reserved.
