@@ -38,30 +38,24 @@ When adding a new project repository to the portfolio:
 3. Update `README.md` to list the new repository
 4. Update this file's "Project Repositories" section
 
-## TODO: Portfolio Restructuring
+## Completed Work
 
-Based on feedback from industry contacts, broaden the portfolio from pure "signal processing" to include "data processing" to appeal to a wider market.
+### Portfolio Restructuring ✅
+- Restructured portfolio as a hub linking to separate project repositories
+- Signal processing code moved to https://github.com/noamshabtai/signal-processing
+- CI/CD and branch protection configured on signal-processing repo
+- Updated portfolio title to "Data & Signal Processing Development Services"
 
-### Tasks
+## Next Steps
 
-1. **Restructure portfolio as a hub** ✅
-   - Portfolio becomes a landing page linking to separate project repositories
-   - `index.md` links to signal processing repo
-   - Signal processing code moved to https://github.com/noamshabtai/signal-processing
-
-2. **Signal processing repo** ✅
-   - Moved `signal_processing/` to its own repository
-   - Portfolio links to it as a demonstration project
-   - CI/CD and branch protection configured
-
-3. **Create data processing repo** (skipped for now)
-   - New repository demonstrating data processing skills
-   - First example: Stock Signal Analyzer
-     - Apply signal processing techniques to financial time series
-     - Filtering (trend extraction), FFT (cyclical patterns), wavelets (multi-scale)
-     - Data pipeline: fetch data → feature extraction → ML model → dashboard
-   - Shows overlap between signal processing expertise and data processing needs
-
-4. **Update portfolio messaging** ✅
-   - Updated title to "Data & Signal Processing Development Services"
-   - Ready to add data processing projects when available
+### 1. Create data processing repo (when ready)
+- New repository demonstrating data processing skills
+- First example: Stock Signal Analyzer
+  - Apply signal processing techniques to financial time series
+  - Filtering (trend extraction), FFT (cyclical patterns), wavelets (multi-scale)
+  - Data pipeline: fetch data → feature extraction → ML model → dashboard
+- Shows overlap between signal processing expertise and data processing needs
+- When created, add to portfolio:
+  - Update `docs/index.md` with new section
+  - Update `README.md` project list
+  - Update this file's "Project Repositories" section
