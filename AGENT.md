@@ -2,10 +2,15 @@
 
 This file contains notes and conventions for developing this project with the help of an AI agent.
 
-# Signal Processing Portfolio Project
+# Data & Signal Processing Portfolio
 
 ## Project Overview
-This is a Python-based signal processing monorepo implementing real-time audio processing and spatial audio functionality. The project uses a modular architecture with multiple interdependent packages managed by `uv`.
+This repository serves as a landing page/hub linking to project repositories that demonstrate my data and signal processing development capabilities.
+
+### Project Repositories
+- **[signal-processing](https://github.com/noamshabtai/signal-processing)** - Real-time signal processing framework with spatial audio demonstration
+
+The signal processing code has been moved to its own repository. See that repo's README and documentation for technical details about the signal processing framework.
 
 ## Architecture
 
@@ -356,16 +361,17 @@ Based on feedback from industry contacts, broaden the portfolio from pure "signa
 
 ### Tasks
 
-1. **Restructure portfolio as a hub**
+1. **Restructure portfolio as a hub** ✅
    - Portfolio becomes a landing page linking to separate project repositories
-   - `index.md` links to signal processing repo and data processing repo
-   - Keep portfolio lightweight - showcase, not code
+   - `index.md` links to signal processing repo
+   - Signal processing code moved to https://github.com/noamshabtai/signal-processing
 
-2. **Signal processing repo**
-   - Move existing `signal_processing/` to its own repository (or keep as submodule)
+2. **Signal processing repo** ✅
+   - Moved `signal_processing/` to its own repository
    - Portfolio links to it as a demonstration project
+   - CI/CD and branch protection configured
 
-3. **Create data processing repo**
+3. **Create data processing repo** (skipped for now)
    - New repository demonstrating data processing skills
    - First example: Stock Signal Analyzer
      - Apply signal processing techniques to financial time series
@@ -373,7 +379,6 @@ Based on feedback from industry contacts, broaden the portfolio from pure "signa
      - Data pipeline: fetch data → feature extraction → ML model → dashboard
    - Shows overlap between signal processing expertise and data processing needs
 
-4. **Update portfolio messaging**
-   - Emphasize "data processing" alongside "signal processing"
-   - Show the bridge: signal processing expertise applied to data problems
-   - Target audience: companies going "more data, less signal processing"
+4. **Update portfolio messaging** ✅
+   - Updated title to "Data & Signal Processing Development Services"
+   - Ready to add data processing projects when available
