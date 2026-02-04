@@ -9,6 +9,7 @@ This repository serves as a landing page/hub linking to project repositories tha
 
 ### Project Repositories
 - **[signal-processing](https://github.com/noamshabtai/signal-processing)** - Real-time signal processing framework with spatial audio demonstration
+- **[data-processing](https://github.com/noamshabtai/data-processing)** - Data processing framework with finance demo (depends on signal-processing)
 
 For technical documentation about the signal processing framework (architecture, modules, development setup, etc.), see the AGENT.md in that repository.
 
@@ -46,13 +47,23 @@ When adding a new project repository to the portfolio:
 - CI/CD and branch protection configured on signal-processing repo
 - Updated portfolio title to "Data & Signal Processing Development Services"
 
-## Next Steps
+### Data Processing Repository ✅
+- Phase A: Extracted base_demo activator class in signal-processing (PR #3, #4)
+- Phase B: Created data-processing repo with finance demo
+  - data-fetcher: yfinance data retrieval
+  - feature-extraction: trend and FFT extractors
+  - model: LSTM PyTorch model
+  - finance-demo: inherits from signal-processing base_demo
+  - stock-analyzer: CLI entry point
+- Repo: https://github.com/noamshabtai/data-processing
 
-### Data Processing Repository Plan
+## Reference
+
+### Data Processing Repository Plan (Completed)
 
 Two-phase approach:
-1. **Phase A**: Refactor signal-processing to extract a `DemoActivator` base class
-2. **Phase B**: Create data-processing repo that depends on signal-processing
+1. **Phase A**: Refactor signal-processing to extract a `DemoActivator` base class ✅
+2. **Phase B**: Create data-processing repo that depends on signal-processing ✅
 
 ---
 
