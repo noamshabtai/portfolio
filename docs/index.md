@@ -102,6 +102,36 @@ The complete framework is open-source, demonstrating transparency and code quali
 
 ---
 
+## Data Processing Framework
+
+**Example Project:** Financial Data Analysis with ML Predictions
+
+Building on the signal-processing infrastructure, this project demonstrates how the same architectural patterns apply to data processing applications. The finance demo shows cross-domain reuse of the activator pattern for polling-based data pipelines.
+
+### Components
+
+- **Data Fetcher**: Stock data retrieval using yfinance with historical and real-time capabilities
+
+- **Feature Extraction**: Signal processing techniques applied to financial time series - trend extraction and FFT-based frequency analysis
+
+- **Model**: PyTorch LSTM for sequence prediction
+
+- **Finance Demo**: Inherits from signal-processing's base_demo activator, demonstrating code reuse across domains
+
+- **Stock Analyzer CLI**: Command-line interface for training and prediction
+
+### Architecture Highlights
+
+- **Cross-Repository Dependencies**: data-processing depends on signal-processing subpackages (activator, system, buffer)
+
+- **Shared Test Infrastructure**: Uses the same YAML-based parametrize-tests framework
+
+- **Inherited Patterns**: Finance demo activator inherits `running`, `process_frame()`, `stop()` from signal-processing's base_demo
+
+**Source Code:** [github.com/noamshabtai/data-processing](https://github.com/noamshabtai/data-processing)
+
+---
+
 ## Get in Touch
 
 If you're interested in building scalable signal processing platforms for your organization, I welcome the opportunity to discuss how my services can support your needs.
