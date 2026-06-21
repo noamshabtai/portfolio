@@ -20,11 +20,12 @@ This page presents independent engineering projects in Python architecture, test
 
 A modular Python framework for signal processing, with spatial audio as an example application.
 
-### Infrastructure
-- **System Architecture**: base system class for module connection and execution
-- **Buffer Management**: input/output buffering for streaming data
-- **Activator Pattern**: file-based and real-time callback implementations
-- **STFT Module**: Analysis/Synthesis with perfect reconstruction and configurable overlap
+### Architecture
+- **Input Buffer**: accumulates step-size chunks until a full window is ready
+- **Modules**: independent signal processors (frequency or time domain), e.g. STFT Analysis, Spatial Audio, STFT Synthesis
+- **System**: runs each module's `execute()`, chaining one module's output into the next
+- **Activator**: drives the system — *offline* (file-to-file WAV/BIN batch, one `.bin` + plot per tracked module) or *demo* (looping WAV input → real-time PyAudio output)
+- **Analysis**: runs an offline Activator once per case from a multi-case YAML, collecting per-case outputs
 
 ### Example Application: Spatial Audio
 - HRTF-based binaural rendering with quaternion head-orientation tracking
