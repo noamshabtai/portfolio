@@ -2,9 +2,9 @@
 layout: default
 ---
 
-# Data & Signal Processing Development Services
+# Noam Shabtai — Signal & Data Processing
 
-Building Scalable Python Platforms with TDD Frameworks and Long-Term Support
+A personal showcase of background and side projects.
 
 ---
 
@@ -12,139 +12,58 @@ Building Scalable Python Platforms with TDD Frameworks and Long-Term Support
 
 I am Noam Shabtai, with a PhD from Ben-Gurion University (Prof. Boaz Rafaely) and postdoctoral research at RWTH Aachen University (Prof. Michael Vorlaender), specializing in array signal processing, real-time systems, and spectral analysis.
 
-This academic foundation in mathematical signal processing - including multi-channel sensor arrays, frequency-domain transformations, and real-time algorithm optimization - applies across domains: audio, medical imaging, radar/lidar, communications, and industrial sensing.
-
-I provide professional Python-based development and testing services for signal processing applications. My expertise lies in building scalable platforms with comprehensive Test-Driven Development (TDD) frameworks and providing long-term support that ensures your systems remain maintainable and reliable.
-
-I help organizations transform their signal processing algorithms into production-ready, scalable platforms with robust testing infrastructure and modern development practices.
+This page collects personal projects I build in my own time to explore Python architecture, test-driven development, and real-time processing.
 
 ---
 
-## Services I Offer
+## Project: Real-Time Signal Processing Framework
 
-- **Custom Python Infrastructure:** Building scalable platforms tailored for signal processing applications
+A personal project: a modular Python framework for signal processing, with spatial audio as an example application.
 
-- **TDD Framework Development:** Establishing comprehensive testing frameworks that ensure code quality and accelerate development cycles
-
-- **Long-Term Platform Support:** Providing ongoing maintenance, updates, and knowledge transfer to your team
-
-- **Real-Time Processing Systems:** Production-ready frameworks with live streaming and data processing capabilities
-
-- **Algorithm Implementation:** Transforming research algorithms into production-ready, tested code
-
-- **Modular Architecture Design:** Scalable systems with clean separation of concerns and reusable components
-
----
-
-## Portfolio Demonstration
-
-**Example Project:** Real-Time Signal Processing Framework with Spatial Audio Application
-
-To demonstrate the quality and depth of services I provide, I have built a complete, production-ready signal processing infrastructure. This framework provides general-purpose components for any signal processing application, with spatial audio implemented as an example use case showcasing the platform's capabilities.
-
-The infrastructure demonstrates how modular, scalable platforms enable rapid development of signal processing applications while maintaining high code quality and testability.
-
-### Core Infrastructure Components
-
-- **System Architecture**: Base system class providing module connection and execution framework - applicable to any signal processing pipeline
-
-- **Buffer Management**: Sophisticated input/output buffer handling for streaming data in real-time applications
-
-- **Activator Pattern**: Abstract base class with both file-based and real-time callback implementations for flexible deployment across different use cases
-
-- **STFT Processing Module**: Modular Short-Time Fourier Transform with separate Analysis and Synthesis classes, perfect reconstruction, and configurable overlap ratios (2x, 4x, custom)
+### Infrastructure
+- **System Architecture**: base system class for module connection and execution
+- **Buffer Management**: input/output buffering for streaming data
+- **Activator Pattern**: file-based and real-time callback implementations
+- **STFT Module**: Analysis/Synthesis with perfect reconstruction and configurable overlap
 
 ### Example Application: Spatial Audio
+- HRTF-based binaural rendering with quaternion head-orientation tracking
+- Tkinter GUI with live azimuth/elevation and per-channel gain
 
-Built on top of the general infrastructure to demonstrate real-world usage:
-
-- **Spatial Audio System**: HRTF-based binaural rendering for immersive 3D audio with quaternion-based head orientation tracking
-
-- **Real-Time GUI Demo**: Tkinter-based interface with live azimuth/elevation control and per-channel gain management
-
-**Try it yourself** (requires Python 3.12+, [uv](https://github.com/astral-sh/uv), and any standard headphones):
+**Try it** (Python 3.12+, [uv](https://github.com/astral-sh/uv), headphones):
 ```bash
 git clone https://github.com/noamshabtai/signal-processing.git
 ./signal-processing/spatial-audio-demo/run_demo.sh
 ```
 
-This example shows how the infrastructure enables rapid development of complex signal processing applications while maintaining code quality and testability.
+### Quality
+- 100+ pytest tests with YAML parametrization
+- GitHub Actions CI/CD, branch protection
+- Pre-commit hooks, type hints, uv, monorepo structure
 
-### Development Quality
-
-- **Comprehensive Testing**: 100+ tests across all modules using pytest with YAML-based parametrization
-
-- **CI/CD Integration**: GitHub Actions with automated testing on all pull requests, branch protection requiring passing tests
-
-- **Modern Development Practices**: Pre-commit hooks, type hints throughout, Python 3.12+, uv package management
-
-- **Modular Design**: Clean separation of concerns with multiple interdependent packages in a monorepo structure
-
-- **Production-Ready**: Real-time processing capabilities, perfect reconstruction guarantees, configurable parameters
-
-### Platform Capabilities
-
-**General Infrastructure:**
-- Frequency-domain processing with configurable STFT pipeline
-- Real-time streaming with callback-based architecture
-- File-based processing for offline analysis
-- Modular design allowing easy addition of new processing modules
-
-**Example Application (Spatial Audio):**
-- Multiple virtual sound sources at configurable 3D positions (azimuth/elevation)
-- Input: CH channels (mono sources) → Output: Binauralized stereo
-- Real-time streaming with PyAudio integration
-- File I/O supporting .wav and .bin formats
-
-**Source Code & Documentation:** [github.com/noamshabtai/signal-processing](https://github.com/noamshabtai/signal-processing)
-
-The complete framework is open-source, demonstrating transparency and code quality. Technical documentation and architecture notes are included in the repository.
+**Source:** [github.com/noamshabtai/signal-processing](https://github.com/noamshabtai/signal-processing)
 
 ---
 
-## Data Processing Framework
+## Project: Data Processing Framework
 
-**Example Project:** Financial Data Analysis with ML Predictions
+A personal project reusing the same patterns for data pipelines — a finance demo built on the activator pattern.
 
-Building on the signal-processing infrastructure, this project demonstrates how the same architectural patterns apply to data processing applications. The finance demo shows cross-domain reuse of the activator pattern for polling-based data pipelines.
-
-### Components
-
-- **Data Fetcher**: Stock data retrieval using yfinance with historical and real-time capabilities
-
-- **Feature Extraction**: Signal processing techniques applied to financial time series - trend extraction and FFT-based frequency analysis
-
+- **Data Fetcher**: stock data via yfinance
+- **Feature Extraction**: trend extraction and FFT-based analysis on time series
 - **Model**: PyTorch LSTM for sequence prediction
+- **Reuse**: finance demo inherits from signal-processing's base_demo
 
-- **Finance Demo**: Inherits from signal-processing's base_demo activator, demonstrating code reuse across domains
-
-- **Stock Analyzer CLI**: Command-line interface for training and prediction
-
-### Architecture Highlights
-
-- **Cross-Repository Dependencies**: data-processing depends on signal-processing subpackages (activator, system, buffer)
-
-- **Shared Test Infrastructure**: Uses the same YAML-based parametrize-tests framework
-
-- **Inherited Patterns**: Finance demo activator inherits `running`, `process_frame()`, `stop()` from signal-processing's base_demo
-
-**Source Code:** [github.com/noamshabtai/data-processing](https://github.com/noamshabtai/data-processing)
+**Source:** [github.com/noamshabtai/data-processing](https://github.com/noamshabtai/data-processing)
 
 ---
 
-## Get in Touch
+## Contact
 
-If you're interested in building scalable signal processing platforms for your organization, I welcome the opportunity to discuss how my services can support your needs.
-
-Whether you need custom infrastructure development, TDD frameworks, or long-term platform support, I can help transform your signal processing requirements into production-ready solutions.
-
-### Contact Information
-
-- **Phone:** +972-58-448-8767
 - **Email:** [shabtai.noam@gmail.com](mailto:shabtai.noam@gmail.com)
 - **LinkedIn:** [linkedin.com/in/noam-shabtai-80836717](https://www.linkedin.com/in/noam-shabtai-80836717/)
 - **GitHub:** [github.com/noamshabtai](https://github.com/noamshabtai)
 
 ---
 
-© 2025 Data & Signal Processing Development. All Rights Reserved.
+© 2025 Noam Shabtai
