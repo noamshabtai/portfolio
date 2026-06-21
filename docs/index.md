@@ -4,7 +4,7 @@ layout: default
 
 # Noam Shabtai — Signal & Data Processing
 
-A personal showcase of background and side projects.
+Python frameworks for real-time signal and data processing.
 
 ---
 
@@ -12,13 +12,13 @@ A personal showcase of background and side projects.
 
 I am Noam Shabtai, with a PhD from Ben-Gurion University (Prof. Boaz Rafaely) and postdoctoral research at RWTH Aachen University (Prof. Michael Vorlaender), specializing in array signal processing, real-time systems, and spectral analysis.
 
-This page collects personal projects I build in my own time to explore Python architecture, test-driven development, and real-time processing.
+This page presents independent engineering projects in Python architecture, test-driven development, and real-time processing.
 
 ---
 
 ## Project: Real-Time Signal Processing Framework
 
-A personal project: a modular Python framework for signal processing, with spatial audio as an example application.
+A modular Python framework for signal processing, with spatial audio as an example application.
 
 ### Infrastructure
 - **System Architecture**: base system class for module connection and execution
@@ -47,7 +47,7 @@ git clone https://github.com/noamshabtai/signal-processing.git
 
 ## Project: Data Processing Framework
 
-A personal project reusing the same patterns for data pipelines — a finance demo built on the activator pattern.
+Reuses the same patterns for data pipelines — a finance demo built on the activator pattern.
 
 - **Data Fetcher**: stock data via yfinance
 - **Feature Extraction**: trend extraction and FFT-based analysis on time series

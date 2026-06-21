@@ -1,6 +1,6 @@
 # Noam Shabtai — Signal & Data Processing
 
-A personal showcase of background and side projects. Not a commercial offering.
+Independent engineering projects in real-time signal and data processing.
 
 ## Projects
 
