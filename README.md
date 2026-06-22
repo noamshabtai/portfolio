@@ -5,7 +5,7 @@ Independent engineering projects in real-time signal and data processing.
 ## Projects
 
 - **[Signal Processing](https://github.com/noamshabtai/signal-processing)** — modular real-time signal processing framework with a spatial audio demo
-- **[Data Processing](https://github.com/noamshabtai/data-processing)** — data pipeline framework reusing the same patterns, with a finance demo
+- **[Data Processing](https://github.com/noamshabtai/data-processing)** — financial time-series pipeline (yfinance → features → LSTM prediction)
 
 ## Highlights
 

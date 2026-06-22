@@ -48,12 +48,16 @@ git clone https://github.com/noamshabtai/signal-processing.git
 
 ## Project: Data Processing Framework
 
-Reuses the same patterns for data pipelines — a finance demo built on the activator pattern.
+A financial time-series pipeline:
 
-- **Data Fetcher**: stock data via yfinance
-- **Feature Extraction**: trend extraction and FFT-based analysis on time series
-- **Model**: PyTorch LSTM for sequence prediction
-- **Reuse**: finance demo inherits from signal-processing's base_demo
+```
+Stock data (yfinance) → Input Buffer → Feature Extraction → LSTM → Prediction
+```
+
+- **Data Fetcher**: historical and real-time stock data via yfinance
+- **Feature Extraction**: trend (moving average, slope) and FFT features → 6-value feature vector
+- **Model**: 2-layer PyTorch LSTM (hidden_dim=32) → Linear(32→1)
+- **Stock Analyzer**: orchestrator wiring Fetcher → Buffer → Features → Model
 
 **Source:** [github.com/noamshabtai/data-processing](https://github.com/noamshabtai/data-processing)
 
