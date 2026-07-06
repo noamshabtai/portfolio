@@ -1,8 +1,30 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noam Shabtai - Signal & Data Processing</title>
+  <meta name="description" content="Python frameworks for real-time signal and data processing">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__inner">
+      <h1 class="hero__title">Noam Shabtai - Signal & Data Processing</h1>
+      <p class="hero__tagline">Python frameworks for real-time signal and data processing</p>
+      <nav class="hero__links">
+        <a href="https://github.com/noamshabtai">GitHub</a>
+        <a href="https://www.linkedin.com/in/noam-shabtai-80836717/">LinkedIn</a>
+        <a href="#contact">Email</a>
+      </nav>
+    </div>
+  </header>
 
-<section class="card card--intro">
+  <main class="content">
+    <section class="card card--intro">
   <span class="eyebrow">About</span>
   <p class="lead">
     I'm <strong>Noam Shabtai</strong> — PhD from Ben-Gurion University (Prof. Boaz Rafaely),
@@ -70,10 +92,16 @@ layout: default
 <section class="card card--contact" id="contact">
   <span class="eyebrow">Contact</span>
   <div class="contact-row">
-    <button class="chip" type="button"
-            onclick="navigator.clipboard.writeText('shabtai.noam@gmail.com');var l=this.querySelector('.chip__label');var o=l.textContent;l.textContent='Copied!';setTimeout(function(){l.textContent=o;},1200);"
-            title="Click to copy">✉️ <span class="chip__label">shabtai.noam@gmail.com</span></button>
+    <button class="chip" type="button" onclick="navigator.clipboard.writeText('shabtai.noam@gmail.com');var l=this.querySelector('.chip__label');var o=l.textContent;l.textContent='Copied!';setTimeout(function(){l.textContent=o;},1200);" title="Click to copy">✉️ <span class="chip__label">shabtai.noam@gmail.com</span></button>
     <a class="chip" href="https://www.linkedin.com/in/noam-shabtai-80836717/">in LinkedIn</a>
     <a class="chip" href="https://github.com/noamshabtai">GitHub</a>
   </div>
 </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Built with test-driven discipline. &copy; 2026 Noam Shabtai</p>
+  </footer>
+</body>
+</html>
