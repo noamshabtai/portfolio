@@ -38,7 +38,7 @@ git clone https://github.com/noamshabtai/signal-processing.git
 ```
 
 ### Test-Driven Development & Clean Code
-- **TDD**: 100+ pytest tests with YAML parametrization, written test-first to drive the design
+- **TDD**: behavior-driven pytest suite, parametrized from YAML case files, written test-first to drive the design
 - **Clean Code**: small single-responsibility modules, dependency injection, intention-revealing names, full type hints
 - GitHub Actions CI/CD with branch protection — the suite gates every merge
 - Pre-commit hooks, uv, monorepo structure
