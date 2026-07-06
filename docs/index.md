@@ -12,7 +12,7 @@ Python frameworks for real-time signal and data processing.
 
 I am Noam Shabtai, with a PhD from Ben-Gurion University (Prof. Boaz Rafaely) and postdoctoral research at RWTH Aachen University (Prof. Michael Vorlaender), specializing in array signal processing, real-time systems, and spectral analysis.
 
-This page presents independent engineering projects in Python architecture, test-driven development, and real-time processing.
+This page presents independent engineering projects built the way I work: **test-driven development** and **Clean Code** first. Tests are written before the code; modules stay small, single-responsibility, and dependency-injected; names read as intent. Architecture and real-time processing follow from that discipline, not the other way around.
 
 ---
 
@@ -37,29 +37,13 @@ git clone https://github.com/noamshabtai/signal-processing.git
 ./signal-processing/spatial-audio-demo/run_demo.sh
 ```
 
-### Quality
-- 100+ pytest tests with YAML parametrization
-- GitHub Actions CI/CD, branch protection
-- Pre-commit hooks, type hints, uv, monorepo structure
+### Test-Driven Development & Clean Code
+- **TDD**: 100+ pytest tests with YAML parametrization, written test-first to drive the design
+- **Clean Code**: small single-responsibility modules, dependency injection, intention-revealing names, full type hints
+- GitHub Actions CI/CD with branch protection — the suite gates every merge
+- Pre-commit hooks, uv, monorepo structure
 
 **Source:** [github.com/noamshabtai/signal-processing](https://github.com/noamshabtai/signal-processing)
-
----
-
-## Project: Data Processing Framework
-
-A financial time-series pipeline:
-
-```
-Stock data (yfinance) → Input Buffer → Feature Extraction → LSTM → Prediction
-```
-
-- **Data Fetcher**: historical and real-time stock data via yfinance
-- **Feature Extraction**: trend (moving average, slope) and FFT features → 6-value feature vector
-- **Model**: 2-layer PyTorch LSTM (hidden_dim=32) → Linear(32→1)
-- **Stock Analyzer**: orchestrator wiring Fetcher → Buffer → Features → Model
-
-**Source:** [github.com/noamshabtai/data-processing](https://github.com/noamshabtai/data-processing)
 
 ---
 
