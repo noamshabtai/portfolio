@@ -2,9 +2,9 @@
 layout: default
 ---
 
-# Noam Shabtai — Signal & Data Processing
+# Noam Shabtai — Signal Processing
 
-Python frameworks for real-time signal and data processing.
+Python frameworks for real-time signal processing.
 
 ---
 
