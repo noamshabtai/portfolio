@@ -76,6 +76,7 @@ body {
   letter-spacing: -0.03em;
   margin: 0 0 0.7rem;
   text-shadow: 0 2px 20px rgba(0,0,0,0.15);
+  text-wrap: balance;
 }
 .hero__tagline {
   font-size: clamp(1.05rem, 2.5vw, 1.3rem);
@@ -100,9 +101,9 @@ body {
 
 /* ---------- Layout ---------- */
 .content {
-  max-width: 860px;
+  max-width: 1080px;
   margin: -4rem auto 0;
-  padding: 0 1.2rem;
+  padding: 0 1.5rem;
   position: relative;
   z-index: 1;
 }
@@ -116,10 +117,12 @@ body {
   padding: 2.4rem clamp(1.4rem, 4vw, 2.8rem);
   margin-bottom: 1.8rem;
 }
+.card--intro p { max-width: 68ch; }
 .card--intro .lead {
   font-size: 1.2rem;
   line-height: 1.6;
   color: var(--ink);
+  max-width: 68ch;
 }
 .card__title {
   font-size: clamp(1.5rem, 3.5vw, 2rem);
