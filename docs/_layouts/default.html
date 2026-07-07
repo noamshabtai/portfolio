@@ -13,7 +13,9 @@
 <body>
   <header class="hero">
     <div class="hero__inner">
-      <h1 class="hero__title">{{ site.title }}</h1>
+      {% assign name_parts = site.title | split: "—" %}
+      <h1 class="hero__title">{{ name_parts[0] | strip }}</h1>
+      <p class="hero__subtitle">{{ name_parts[1] | strip }}</p>
       <p class="hero__tagline">{{ site.description }}</p>
       <nav class="hero__links">
         <a href="https://github.com/noamshabtai">GitHub</a>
