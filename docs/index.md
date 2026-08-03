@@ -53,7 +53,8 @@ layout: default
   <div class="terminal">
     <div class="terminal__bar"><span></span><span></span><span></span></div>
 <pre><code>git clone https://github.com/noamshabtai/signal-processing.git
-./signal-processing/spatial-audio-demo/run_demo.sh</code></pre>
+cd signal-processing
+./spatial-audio-demo/run_demo.sh</code></pre>
   </div>
 
   <h3 class="section-label">Test-Driven Development &amp; Clean Code</h3>
