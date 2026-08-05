@@ -49,7 +49,7 @@ layout: default
     <li>Tkinter GUI with live azimuth / elevation and per-channel gain</li>
   </ul>
 
-  <h3 class="section-label">Try it <span class="muted">— Python 3.12+, <a href="https://github.com/astral-sh/uv">uv</a>, headphones</span></h3>
+  <h3 class="section-label">Try it <span class="muted">— Ubuntu, <a href="https://github.com/astral-sh/uv">uv</a>, headphones</span></h3>
   <div class="terminal">
     <div class="terminal__bar"><span></span><span></span><span></span></div>
 <pre><code>git clone https://github.com/noamshabtai/signal-processing.git

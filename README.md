@@ -20,7 +20,7 @@ git clone https://github.com/noamshabtai/signal-processing.git
 ./signal-processing/spatial-audio-demo/run_demo.sh
 ```
 
-Requires Python 3.12+, [uv](https://github.com/astral-sh/uv), and headphones.
+Requires Ubuntu, [uv](https://github.com/astral-sh/uv), and headphones — the script installs Python and PortAudio itself.
 
 ## Portfolio
 
