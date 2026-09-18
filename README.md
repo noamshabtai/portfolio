@@ -4,7 +4,7 @@ Independent engineering projects in real-time signal and data processing.
 
 ## Projects
 
-- **[Signal Processing](https://github.com/noamshabtai/signal-processing)** — modular real-time signal processing framework with a spatial audio demo
+- **[Signal Processing](https://github.com/noamshabtai/signal-processing)** — modular real-time signal processing framework with a graphic equalizer demo
 - **[Data Processing](https://github.com/noamshabtai/data-processing)** — financial time-series pipeline (yfinance → features → LSTM prediction)
 
 ## Highlights
@@ -13,14 +13,14 @@ Independent engineering projects in real-time signal and data processing.
 - Real-time streaming and file-based processing
 - CI/CD, pre-commit hooks, type hints, uv
 
-## Try the spatial audio demo
+## Try the equalizer demo
 
 ```bash
 git clone https://github.com/noamshabtai/signal-processing.git
-./signal-processing/spatial-audio-demo/run_demo.sh
+./signal-processing/equalizer-demo/run_demo.sh
 ```
 
-Requires Ubuntu, [uv](https://github.com/astral-sh/uv), and headphones — the script installs Python and PortAudio itself.
+Requires Ubuntu, [uv](https://github.com/astral-sh/uv), and speakers — the script installs Python and PortAudio itself.
 
 ## Portfolio
 

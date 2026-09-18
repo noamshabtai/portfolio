@@ -22,13 +22,13 @@ layout: default
 <section class="card">
   <span class="eyebrow">Featured Project</span>
   <h2 class="card__title">Real-Time Signal Processing Framework</h2>
-  <p class="card__subtitle">A modular Python framework for signal processing, with spatial audio as an example application.</p>
+  <p class="card__subtitle">A modular Python framework for signal processing, with a graphic equalizer as an example application.</p>
 
   <div class="badges">
-    <span class="badge">Python 3.12+</span>
+    <span class="badge">Python 3.14</span>
     <span class="badge">NumPy</span>
     <span class="badge">PyAudio</span>
-    <span class="badge">HRTF / Binaural</span>
+    <span class="badge">STFT</span>
     <span class="badge">pytest</span>
     <span class="badge">GitHub Actions</span>
     <span class="badge">uv</span>
@@ -37,24 +37,24 @@ layout: default
   <h3 class="section-label">Architecture</h3>
   <div class="grid">
     <div class="tile"><span class="tile__icon">🧩</span><h4>Input Buffer</h4><p>Accumulates step-size chunks until a full window is ready.</p></div>
-    <div class="tile"><span class="tile__icon">🔊</span><h4>Modules</h4><p>Independent processors (frequency or time domain): STFT Analysis, Spatial Audio, STFT Synthesis.</p></div>
+    <div class="tile"><span class="tile__icon">🔊</span><h4>Modules</h4><p>Independent processors (frequency or time domain): STFT Analysis, Equalizer, STFT Synthesis.</p></div>
     <div class="tile"><span class="tile__icon">⛓️</span><h4>System</h4><p>Runs each module's <code>execute()</code>, chaining one module's output into the next.</p></div>
     <div class="tile"><span class="tile__icon">▶️</span><h4>Activator</h4><p>Drives the system — <em>offline</em> (WAV/BIN batch) or <em>demo</em> (looping WAV → real-time PyAudio out).</p></div>
     <div class="tile"><span class="tile__icon">📊</span><h4>Analysis</h4><p>Runs an offline Activator once per case from a multi-case YAML, collecting per-case outputs.</p></div>
   </div>
 
-  <h3 class="section-label">Example Application — Spatial Audio</h3>
+  <h3 class="section-label">Example Application — Graphic Equalizer</h3>
   <ul class="feature-list">
-    <li>HRTF-based binaural rendering with quaternion head-orientation tracking</li>
-    <li>Tkinter GUI with live azimuth / elevation and per-channel gain</li>
+    <li>Octave bands whose gains interpolate in decibels over log frequency — a smooth zero-phase response, not a stepped one</li>
+    <li>Tkinter GUI with a live slider per band; a move takes effect on the next STFT hop</li>
   </ul>
 
-  <h3 class="section-label">Try it <span class="muted">— Ubuntu, <a href="https://github.com/astral-sh/uv">uv</a>, headphones</span></h3>
+  <h3 class="section-label">Try it <span class="muted">— Ubuntu, <a href="https://github.com/astral-sh/uv">uv</a>, speakers</span></h3>
   <div class="terminal">
     <div class="terminal__bar"><span></span><span></span><span></span></div>
 <pre><code>git clone https://github.com/noamshabtai/signal-processing.git
 cd signal-processing
-./spatial-audio-demo/run_demo.sh</code></pre>
+./equalizer-demo/run_demo.sh</code></pre>
   </div>
 
   <h3 class="section-label">Test-Driven Development &amp; Clean Code</h3>

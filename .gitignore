@@ -2,3 +2,5 @@
 *.bin
 *.png
 .claude/skills/contract/
+docs/_site/
+.jekyll-cache/
